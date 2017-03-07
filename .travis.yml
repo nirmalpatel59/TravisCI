@@ -1,5 +1,8 @@
 language : node
 sudo: true
+branches:
+  only:
+  - "/^.*master$/"
 node:
 - '0.12'
 script : 
