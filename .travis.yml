@@ -1,4 +1,5 @@
 language : node
+sudo: true
 node:
 - '0.12'
 script : 
