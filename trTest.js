@@ -9,7 +9,9 @@ request({
 }, function (err, res) {
   if (err) return console.error(err.message);
 
-  console.log(res.body);
+    console.log('--------------------------')
+    console.log(res.body);
+    console.log('-------------------------')
 
   return res;
   });
