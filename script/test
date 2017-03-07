@@ -1,2 +1,14 @@
 
+set -e
+
+if [ "${TRAVIS_BRANCH}" == "development" ]; then
+  export NODE_ENV=development
+elif [ "${TRAVIS_BRANCH}" == "staging" ]; then
+  export NODE_ENV=staging
+elif [ "${TRAVIS_BRANCH}" == "master" ]; then
+  export NODE_ENV=production
+fi
+
+echo "branch = $NODE_ENV"
+
 node trTest.js
