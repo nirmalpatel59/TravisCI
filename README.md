@@ -1,4 +1,2 @@
 # TravisCI
-Testing of travisCI
-Hi
-hello
+travis ci integration  demo
