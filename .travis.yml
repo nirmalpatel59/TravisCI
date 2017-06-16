@@ -6,5 +6,7 @@ branches:
   - "/^ *staging$/"
 node:
 - '0.12'
+install:
+- npm install -g bower
 script : 
 - "script/install && script/start && script/test && script/stop"
